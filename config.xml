@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gap:plugin name='org.crosswalk.engine' version='1.3.0' source='pgb' />
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.hello-world"
