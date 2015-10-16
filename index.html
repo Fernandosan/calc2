@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CalcApp</title>
+		<link href="index.css" rel="stylesheet" type="text/css"></link>
+	</head>
+	<body>
+	
+		<form name="Calc">
+			<table>
+				<tr>
+					<td colspan= "4"><input type="text" name="tela"></input></td>
+				</tr>
+				<tr>
+					<td><button type="button" onClick="Calc.tela.value += '7'">7</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '8'">8</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '9'">9</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '/'">/</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" onClick="Calc.tela.value += '4'">4</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '5'">5</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '6'">6</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '*'">*</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" onClick="Calc.tela.value += '1'">1</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '2'">2</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '3'">3</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '-'">-</button></td>
+				</tr>
+				<tr>
+					<td><button type="button" onClick="Calc.tela.value = ''">C</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '0'">0</button></td>
+					<td><button type="button" onClick="if (eval(Calc.tela.value)==Infinity || eval(Calc.tela.value)==-Infinity || isNaN(eval(Calc.tela.value))){ Calc.tela.value = 'Erro'} 
+					else {Calc.tela.value = eval(Calc.tela.value)}">=</button></td>
+					<td><button type="button" onClick="Calc.tela.value += '+'">+</button></td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>
